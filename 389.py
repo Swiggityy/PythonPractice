@@ -1,8 +1,8 @@
-a = "abcd"
-b = "abcde"
+a = ["a", "b", "c", "d"]
+b = ["a", "b", "c", "d", "e"]
 
+c = a.extend(b)
 
-for letter in a:
-    for letter1 in b:
-        if letter != letter1:
-            print(letter)
+for d in a:
+    if (d.count < 2):
+        print(d)
